@@ -1,0 +1,12 @@
+.ProjectCard {
+    display: grid;
+    height: 70%;
+    margin: 1rem 1rem 1rem 1rem;
+    border-style: groove;
+    border-color: deeppink;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ProjectCard img {
+    width: 70%;
+}

@@ -1,0 +1,34 @@
+
+.Projects {
+    width: 98vw;
+    height: 100vh;
+    margin-bottom: 1rem;
+    scroll-margin-top: 5.5rem;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: "arr1 arr2 arr3"
+    "abj1 abj2 abj3";
+    justify-content: center;
+    color:beige;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 0.05rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              /* 0 0 2rem #bc13fe, */
+              /* 0 0 0.8rem #bc13fe, */
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+}
+
+.PjTitle {
+    grid-area: arr2;
+}
+
+.ProjectCont {
+    display: grid;
+    grid-area: abj2;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,57 @@
+
+.NavBar {
+    width: 100vw;
+    height: 5rem;
+    background-color: rgba(32, 18, 36, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.NavBar h2 {
+    color: #2de2e6;
+    cursor: pointer;
+}
+
+.NavBar h2:hover {
+    color:rgb(203, 150, 219);
+}
+
+.Name h1 {
+    animation: flicker 1.5s infinite alternate;  
+    font-size: 3rem;
+    cursor: pointer;  
+}
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        /* 0 0 19px #fff, */
+        0 0 40px rgb(151, 45, 151),
+        0 0 80px rgb(151, 45, 151),
+        0 0 90px rgb(151, 45, 151),
+        0 0 100px rgb(151, 45, 151),
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+@media only screen and (max-width: 515px) {
+    .NavBar {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
