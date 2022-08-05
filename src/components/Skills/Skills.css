@@ -1,7 +1,7 @@
 
 .Skills {
     width: 98vw;
-    height: 50vh;
+    height:max-content;
     margin-bottom: 1rem;
     scroll-margin-top: 5.5rem;
     display: grid;
@@ -42,6 +42,7 @@
     grid-auto-flow: row;
     grid-area: abj2;
     max-height: fit-content;
+    margin-bottom: 1rem;
 }
 
 .SkTitle {
