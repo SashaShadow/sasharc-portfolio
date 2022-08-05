@@ -1,4 +1,12 @@
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .NavBar {
     width: 100vw;
     height: 5rem;
@@ -88,7 +96,7 @@ header .nav-btn{
         opacity: 1;
         display: initial;
         position: absolute;
-        top: 2rem;
+        top: 1.5rem;
         right: 2rem;
         background-color: rgba(32, 18, 36, 0.7);
     }

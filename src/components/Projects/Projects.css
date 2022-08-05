@@ -50,6 +50,12 @@
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .Projects {
+        scroll-margin-top: 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 640px) {
     .ProjectCont {
         grid-template-columns:none;
