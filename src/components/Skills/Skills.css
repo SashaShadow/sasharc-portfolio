@@ -61,11 +61,11 @@
     }
 }
 
-@media only screen and (max-width: 770px) {
+/* @media only screen and (max-width: 770px) {
     .Skills {
         scroll-margin-top: 0.5rem;
     }
-}
+} */
 
 
 @media only screen and (max-width: 585px) {

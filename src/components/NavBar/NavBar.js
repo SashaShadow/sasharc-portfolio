@@ -23,9 +23,9 @@ const NavBar = ({scroll, home, contact, projects, skills}) => {
                 <h2 className='nav-link' onClick={() => {showNavBar(); scroll(contact)}}>Contacto</h2>
                 <button className='nav-btn nav-close-btn' onClick={showNavBar} > <MdOutlineClose/> </button>
             </nav>
-            <div className='Name2'>
+            {/* <div className='Name2'>
                     <h1 onClick={() => scroll(home)}>SRC</h1>
-                </div>
+                </div> */}
             <button className='nav-btn' onClick={showNavBar} > <FaBars/> </button>
         </header>
         
