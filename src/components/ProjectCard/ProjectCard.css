@@ -1,12 +1,54 @@
 .ProjectCard {
     display: grid;
-    height: 70%;
-    margin: 1rem 1rem 1rem 1rem;
-    border-style: groove;
-    border-color: deeppink;
+    height: 35rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-style:hidden;
+    border-color: rgb(246, 235, 241);
     grid-template-rows: 1fr 1fr;
+    grid-area: "arr"
+    "abj";
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              /* 0 0 2rem #bc13fe, */
+              /* 0 0 0.8rem #bc13fe, */
+              0 0 2.8rem deeppink,
+              inset 0 0 1.3rem deeppink;
 }
 
 .ProjectCard img {
-    width: 70%;
+    width: 80%;
+    /* height: 70%; */
+    margin-top: 3.5rem;
+}
+
+.Pinfo {
+    /* grid-area: abj; */
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    justify-content: center;
+    align-items: center;
+}
+
+.Pinfo p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.Pinfo a:hover {
+    color: aqua;
+}
+
+.Butt1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:initial;
+    align-items: center;
+    margin-bottom: 4.5rem;
+}
+
+@media only screen and (max-width: 930px) {
+    .ProjectCard {
+        width: 100%;
+    }
 }

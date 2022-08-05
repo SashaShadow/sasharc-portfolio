@@ -1,4 +1,5 @@
 import "./ProjectCard.css"
+import {BsCode, BsLink45Deg} from 'react-icons/bs';
 
 const ProjectCard = ({image, text, url, url2}) => {
 
@@ -9,8 +10,10 @@ const ProjectCard = ({image, text, url, url2}) => {
             </div>
             <div className="Pinfo">
                 <p>{text}</p>
-                <a href={url}>Ver proyecto</a>
-                <a href={url2}>Código</a>
+                <div className="Butt1">
+                <a href={url} target='_blank' rel="noreferrer noopener"><BsCode size={40}/></a>
+                <a href={url2} target='_blank' rel="noreferrer noopener"><BsLink45Deg size={40}/></a>
+                </div>
             </div>
         </div>
     )

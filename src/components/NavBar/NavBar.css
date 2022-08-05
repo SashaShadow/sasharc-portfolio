@@ -27,6 +27,38 @@
 }
 
 
+/* .nav-link{
+    margin: 0 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #EDF6F7;
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--color-secundario);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.Name2 h1 {
+    animation: flicker 1.5s infinite alternate;  
+    font-size: 3rem;
+    cursor: pointer;  
+}
+
+.Name2 {
+    display: none;
+}
+
 /* Flickering animation */
 @keyframes flicker {
     
@@ -49,9 +81,62 @@
     }    
   }
 
-@media only screen and (max-width: 515px) {
-    .NavBar {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
+
+  @media only screen and (max-width: 768px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        display: initial;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background-color: rgba(32, 18, 36, 0.7);
+    }
+
+    .Name2 {
+        display: flex;
+        height: 5rem;
+        position: absolute; 
+        left: 1rem;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Name2 h1 {
+        margin-bottom: 1rem;
+    }
+    
+    nav .nav-link{
+        width: 100%;
+        margin: 0rem 0rem;
+        padding: 2rem 0;
+    }
+    
+    header nav{
+        position: fixed;
+        top:0 ;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 100000;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        font-size: 2.3rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 }
