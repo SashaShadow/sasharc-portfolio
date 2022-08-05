@@ -147,4 +147,12 @@ header .nav-btn{
         top: 2rem;
         right: 2rem;
     }
+
+    .Name {
+        display: none;
+    }
+
+    .NavBar {
+        height: 100vh;
+    }
 }
