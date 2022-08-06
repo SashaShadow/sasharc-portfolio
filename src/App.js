@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Home homeRef={homeRef}/>
       <Skills skillsRef={skillsRef}/>
       <Projects projectsRef={projectsRef}/>
+      <Contact contactRef={contactRef}/>
     </div>
   );
 }

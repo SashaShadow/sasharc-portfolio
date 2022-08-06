@@ -36,6 +36,11 @@
     width: 5rem;
 }
 
+.Skill:hover {
+    color:rgb(95, 27, 95);
+    transform:scale(1.2);
+}
+
 .SkillCont {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
