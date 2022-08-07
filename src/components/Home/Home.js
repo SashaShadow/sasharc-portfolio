@@ -7,7 +7,7 @@ const Home = ({homeRef}) => {
             <div className="Sasha Square">
                 <h1>Sasha Rodriguez Carlomagno</h1>
                 {/* <h2>Desarrollador Fullstack</h2> */}
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/>
+                <img src="https://res.cloudinary.com/ddi5wmffy/image/upload/v1659906998/Captura_desde_2022-08-07_18-16-12_uipvrv.png"/>
                 <h2>LVL: 27</h2>
                 <h2>ESTADO: estudiando...</h2>   
                 <h2>LUGAR DE RESIDENCIA: Ciudad Autónoma de Buenos Aires, Argentina</h2>         
