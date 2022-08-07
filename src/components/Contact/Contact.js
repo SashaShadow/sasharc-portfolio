@@ -4,6 +4,26 @@ import { BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 const Contact = ({contactRef}) => {
 
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_jutddqi', 'template_npvafp3', form.current, 'HpQpFqzf8B34MKSZt')
+        .then((result) => {
+            console.log(result.text);
+            alert("Mensaje enviado")
+            document.querySelector("#userName").value = "";
+            document.querySelector("#userEmail").value = "";
+            document.querySelector("#userPhone").value = "";
+            document.querySelector("#message").value = "";
+        }, (error) => {
+            console.log(error.text);
+        }).then(() => {
+
+        });
+    };
+
     const whatsappLink = () => {
         window.open('https://api.whatsapp.com/send?phone=1130931945', '_blank')
     }
