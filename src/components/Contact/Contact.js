@@ -1,8 +1,9 @@
 import './Contact.css';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 
 const Contact = ({contactRef}) => {
-
 
     const form = useRef();
 
@@ -40,7 +41,6 @@ const Contact = ({contactRef}) => {
         window.open('https://instagram.com/sasha.r.c', '_blank')
     }
 
-    // onSubmit={sendEmail}
     return (
         <div className='Contact'>
             <div className='ContContainer'>
@@ -55,7 +55,7 @@ const Contact = ({contactRef}) => {
                     </div>
                 </div>
                 <div className="ContactMe" ref={contactRef} >
-                    <form className="ContactForm">
+                    <form className="ContactForm" ref={form} onSubmit={sendEmail}>
                         <label>Nombre*</label>
                         <input type="text" id="userName" name="user_name" placeholder="Escribe tu nombre aquí..." required/>
                         <label>Email*</label>
