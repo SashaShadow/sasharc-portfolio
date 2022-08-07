@@ -46,7 +46,7 @@ const Contact = ({contactRef}) => {
             <div className='ContContainer'>
                 <div className='ContInfo'>
                     <h1>Contactame</h1>
-                    <h2>Dejame un mensaje desde acá o hablame a mis redes sociales si necesitás
+                    <h2>Dejame un mensaje por acá o hablame a mis redes sociales si necesitás
                         comunicarte conmigo.
                     </h2>
                     <div className="IconsFooter">
