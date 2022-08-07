@@ -74,6 +74,8 @@
 
     .Info {
         text-align: center;
+        margin-right:initial;
+        padding-left: initial;
     }
 
     .Square {
