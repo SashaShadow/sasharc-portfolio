@@ -17,7 +17,7 @@ const Projects = ({projectsRef}) => {
                 url2={'http://win-guitars.vercel.app/'}/>
                 <ProjectCard image={'https://res.cloudinary.com/ddi5wmffy/image/upload/v1670187909/Captura_desde_2022-12-04_18-02-47_qr9lpl.png'}
                 text={'E-commerce (fullstack app) realizado con Node, Express.js, MongoDB, Passport (APIS y Backend) y EJS como motor de plantillas.'} url={'https://github.com/SashaShadow/tetsu-fragances'}
-                url2={'#'}/>
+                url2={'https://tetsufragances.onrender.com/shop/'}/>
                 <ProjectCard image={'https://res.cloudinary.com/ddi5wmffy/image/upload/v1659796618/alice_jjtsgs.png'} 
                 text={`Landing page para diseñadora gráfica. Tecnologías utilizadas: 
                 ReactJS para la interfaz de usuario, consumiendo una API que brinda 
